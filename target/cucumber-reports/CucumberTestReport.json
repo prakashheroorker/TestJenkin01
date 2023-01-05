@@ -1,0 +1,217 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 32481854600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on pre-login page",
+            "match": {
+              "location": "Common.user_is_on_pre_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15776004400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_StepDefinition.beforeMethod(Scenario)"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "BatCanada_Help",
+        "description": "",
+        "id": "bat-canada-help;batcanada-help;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 4958911000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_StepDefinition.generate_Report_URl()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4179191500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click on login/register button",
+            "match": {
+              "location": "Common.user_click_on_login_register_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17274961800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Verify the login modal is displayed with relevent content",
+            "match": {
+              "location": "Common.verify_the_login_modal_is_displayed_with_relevent_content()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10389562000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enters email \"alix.malkin@bat.com\" and Password \"TEST1234\" and click on login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "alix.malkin@bat.com",
+                  "offset": 19
+                },
+                {
+                  "val": "TEST1234",
+                  "offset": 54
+                }
+              ],
+              "location": "Common.user_enters_email_and_Password_and_click_on_login(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6455955700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Verify home page is displayed",
+            "match": {
+              "location": "Common.verify_home_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17576192900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User Hover on Help and verify links under help",
+            "match": {
+              "location": "BatCanadaHelp.user_Hover_on_Help_and_verify_links_under_help()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7672614900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User clicks on Shipping and delivery and verify shipping and delivery page",
+            "match": {
+              "location": "BatCanadaHelp.user_clicks_on_Shipping_and_delivery_and_verify_shipping_and_delivery_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17816496400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User Hover on Help and click on Contact us and verify Contact Us page",
+            "match": {
+              "location": "BatCanadaHelp.user_Hover_on_Help_and_click_on_Contact_us_and_verify_Contact_Us_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23025121000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User Hover on Help and click on Faq and verify Faq page",
+            "match": {
+              "location": "BatCanadaHelp.user_Hover_on_Help_and_click_on_Faq_and_verify_Faq_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26183021900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User Hover on Help and click on StoreLocator and verify StoreLocator page",
+            "match": {
+              "location": "BatCanadaHelp.user_Hover_on_Help_and_click_on_StoreLocator_and_verify_StoreLocator_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4761891300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Hover on Account icon and Click on Logout option",
+            "match": {
+              "location": "Common.Hover_on_Account_icon_and_Click_on_Logout_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3699043000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Verify the user is in Pre login home page",
+            "match": {
+              "location": "Common.verify_the_user_is_in_Pre_login_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@BatHelp"
+          }
+        ]
+      }
+    ],
+    "name": "Bat Canada Help",
+    "description": "",
+    "id": "bat-canada-help",
+    "keyword": "Feature",
+    "uri": "src/test/java/Features/BatCanadaHelp.feature"
+  }
+]

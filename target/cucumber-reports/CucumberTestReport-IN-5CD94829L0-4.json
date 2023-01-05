@@ -1,0 +1,338 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 26075423400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on pre-login page",
+            "match": {
+              "location": "Common.user_is_on_pre_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11127924500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_StepDefinition.beforeMethod(Scenario)"
+            }
+          }
+        ],
+        "line": 123,
+        "name": "VUSE_Subscription_Add_new_subscription_tocart_for_existing_subscription",
+        "description": "",
+        "id": "subscription-epod-business-workflow;vuse-subscription-add-new-subscription-tocart-for-existing-subscription;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 8064374500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_StepDefinition.generate_Report_URl()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 28303160800,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "user login with valid email address \"jack.daniel@bat.com\" and password \"TEST1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jack.daniel@bat.com",
+                  "offset": 37
+                },
+                {
+                  "val": "TEST1234",
+                  "offset": 72
+                }
+              ],
+              "location": "Common.user_login_with_valid_email_address_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20891865400,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "User navigates to ePod pods page",
+            "match": {
+              "location": "Subscription.user_navigates_to_ePod_pods_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26311299300,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "User subscribes for flavour \"Clear\" with required quantity \"5\" and add to the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Clear",
+                  "offset": 29
+                },
+                {
+                  "val": "5",
+                  "offset": 60
+                }
+              ],
+              "location": "Subscription.user_subscribes_for_the_flavour_and_selects_the_quantity(String,int)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28412621300,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "User navigates to Cart page",
+            "match": {
+              "location": "Subscription.user_navigates_to_Cart_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103492020400,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "User navigates to Check out page and Submits the Order with card details \"5555 5555 5555 4444\", \"1024\", \"190\", \"CANADA VYPE USER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5555 5555 5555 4444",
+                  "offset": 74
+                },
+                {
+                  "val": "1024",
+                  "offset": 97
+                },
+                {
+                  "val": "190",
+                  "offset": 105
+                },
+                {
+                  "val": "CANADA VYPE USER",
+                  "offset": 112
+                }
+              ],
+              "location": "Subscription.user_navigates_to_Check_out_page_and_Submits_the_Order(String,String,String,String)"
+            },
+            "matchedColumns": [
+              5,
+              6,
+              7,
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6341887200,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "Order should be Submitted and Subscription should be added",
+            "match": {
+              "location": "Subscription.order_should_be_Submitted_and_Subscription_should_be_added()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10773245900,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "User clicks on Logout link",
+            "match": {
+              "location": "Profile.user_clicks_on_Logout_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3262378000,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "User should be logged out",
+            "match": {
+              "location": "Profile.user_should_be_logged_out()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20188778500,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "User logs in with same email address \"jack.daniel@bat.com\" and password \"TEST1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jack.daniel@bat.com",
+                  "offset": 38
+                },
+                {
+                  "val": "TEST1234",
+                  "offset": 73
+                }
+              ],
+              "location": "Subscription.user_logs_in_with_same_email_address_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12749250800,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "User confirms if user has active subscription",
+            "match": {
+              "location": "Subscription.user_confirms_if_user_has_active_subscription()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20776280200,
+              "status": "passed"
+            },
+            "line": 114,
+            "name": "User navigates to ePod pods page",
+            "match": {
+              "location": "Subscription.user_navigates_to_ePod_pods_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87739276400,
+              "status": "passed"
+            },
+            "line": 115,
+            "name": "User selects additional product \"Mango\" for subscription and add to the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mango",
+                  "offset": 33
+                }
+              ],
+              "location": "Subscription.user_selects_additional_product_for_subscription_and_add_to_the_cart(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28760794200,
+              "status": "passed"
+            },
+            "line": 116,
+            "name": "Draft Subscription Order should be displayed upon clicking on Go to Account button",
+            "match": {
+              "location": "Subscription.draft_Subscription_Order_should_be_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7768016700,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "Draft Subscription Order should be submitted upon clicking on Submit Update button",
+            "match": {
+              "location": "Subscription.draft_Subscription_Order_should_be_submitted_upon_clicking_on_Submit_Update_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50717605100,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "verify Active subscription and cancel the subscription",
+            "match": {
+              "location": "Common.verify_Active_subscription_and_cancel_the_subscription()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14715365900,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "verify existing payment method and delete the payment method",
+            "match": {
+              "location": "Common.verify_existing_payment_method_and_delete_the_payment_method()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 102,
+            "name": "@AddSubscriptionwithExistingSub"
+          }
+        ]
+      }
+    ],
+    "name": "Subscription ePod Business Workflow",
+    "description": "",
+    "id": "subscription-epod-business-workflow",
+    "keyword": "Feature",
+    "uri": "SubscriptionePodBusinessWorkflow.feature"
+  }
+]

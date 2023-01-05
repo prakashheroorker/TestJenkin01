@@ -1,0 +1,177 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "User is on pre-login page",
+            "match": {
+              "location": "Common.user_is_on_pre_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "GVCA_Taxbreakdown_02_TC001",
+        "description": "",
+        "id": "calculate-tax-breakdown-for-all-the-provinces;gvca-taxbreakdown-02-tc001;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user login with valid email address \"brandon.huynen@bat.com\" and password \"TEST1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "brandon.huynen@bat.com",
+                  "offset": 37
+                },
+                {
+                  "val": "TEST1234",
+                  "offset": 75
+                }
+              ],
+              "location": "Common.user_login_with_valid_email_address_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user navigates to account page to get the address",
+            "match": {
+              "location": "TaxBreakDown.user_navigates_to_account_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user navigates to epod pods page and select flavor as flavorcolor \"Blood Orange\" and flavorname \"Blood Orange\" and add to cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blood Orange",
+                  "offset": 67
+                },
+                {
+                  "val": "Blood Orange",
+                  "offset": 97
+                }
+              ],
+              "location": "TaxBreakDown.user_navigates_to_epod_pods_page_and_select_flavor_and_add_to_cart(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "navigate to Cart and verify the items in Cart",
+            "match": {
+              "location": "Common.navigate_to_Cart_and_verify_the_items_in_Cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "Calculate tax breakdown",
+            "match": {
+              "location": "TaxBreakDown.calculate_tax_breakdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user enters UserCardNumber \"4444333322221111\", UserCardExpiryDate \"1024\", UserCardCVV \"190\",UserCardFullName \"CANADA VYPE USER\" to submit order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4444333322221111",
+                  "offset": 28
+                },
+                {
+                  "val": "1024",
+                  "offset": 67
+                },
+                {
+                  "val": "190",
+                  "offset": 87
+                },
+                {
+                  "val": "CANADA VYPE USER",
+                  "offset": 110
+                }
+              ],
+              "location": "TaxBreakDown.user_enters_UserCardNumber_UserCardExpiryDate_UserCardCVV_UserCardFullName_to_submit_order(String,String,String,String)"
+            },
+            "matchedColumns": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "verify order confirmation page",
+            "match": {
+              "location": "Common.verify_order_confirmation_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@GoldenRegressionSuite"
+          }
+        ]
+      }
+    ],
+    "name": "Calculate Tax breakdown for all the Provinces",
+    "description": "",
+    "id": "calculate-tax-breakdown-for-all-the-provinces",
+    "keyword": "Feature",
+    "uri": "src/test/java/Features/TaxBreakDown.feature"
+  }
+]

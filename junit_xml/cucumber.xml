@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0">
+<testcase classname="Calculate Tax breakdown for all the Provinces" name="GVCA_Taxbreakdown_02_TC001" time="0">
+<system-out><![CDATA[Given User is on pre-login page.............................................skipped
+Given user login with valid email address "brandon.huynen@bat.com" and password "TEST1234".skipped
+And user navigates to account page to get the address.......................skipped
+When user navigates to epod pods page and select flavor as flavorcolor "Blood Orange" and flavorname "Blood Orange" and add to cart.skipped
+And navigate to Cart and verify the items in Cart...........................skipped
+And Calculate tax breakdown.................................................skipped
+Then user enters UserCardNumber "4444333322221111", UserCardExpiryDate "1024", UserCardCVV "190",UserCardFullName "CANADA VYPE USER" to submit order.skipped
+Then verify order confirmation page.........................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,219 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 38767503900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on pre-login page",
+            "match": {
+              "location": "Common.user_is_on_pre_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 22969017000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_StepDefinition.beforeMethod(Scenario)"
+            }
+          }
+        ],
+        "line": 159,
+        "name": "ePod2_AddSkins_Chargingcable_ePod2_flavours_tocartandplace_E2E_order",
+        "description": "",
+        "id": "this-test-is-to-validate-the-epod2-skins-screen-page;epod2-addskins-chargingcable-epod2-flavours-tocartandplace-e2e-order;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 7087692700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks_StepDefinition.generate_Report_URl()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 25966376100,
+              "status": "passed"
+            },
+            "line": 150,
+            "name": "user login with valid email address \"annil.ramroop@bat.com\" and password \"TEST1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "annil.ramroop@bat.com",
+                  "offset": 37
+                },
+                {
+                  "val": "TEST1234",
+                  "offset": 74
+                }
+              ],
+              "location": "Common.user_login_with_valid_email_address_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 221113675600,
+              "status": "passed"
+            },
+            "line": 151,
+            "name": "Hower on shop and navigate to device and select device with \"Blue\",\"mystique\",\"Mango\",\"fruit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blue",
+                  "offset": 61
+                },
+                {
+                  "val": "mystique",
+                  "offset": 68
+                },
+                {
+                  "val": "Mango",
+                  "offset": 79
+                },
+                {
+                  "val": "fruit",
+                  "offset": 87
+                }
+              ],
+              "location": "Skinspage.hower_on_shop_and_navigate_to_device_and_select_device_with(String,String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26953808500,
+              "status": "passed"
+            },
+            "line": 152,
+            "name": "navigate to Cart and verify the items in Cart",
+            "match": {
+              "location": "Common.navigate_to_Cart_and_verify_the_items_in_Cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35978965300,
+              "status": "passed"
+            },
+            "line": 153,
+            "name": "verify the price in cart",
+            "match": {
+              "location": "ePodPods.verify_the_price_in_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 100472852200,
+              "status": "passed"
+            },
+            "line": 154,
+            "name": "user Enters UserCardNumber \"5555555555554444\", UserCardExpiryDate \"0923\", UserCardCVV \"123\",UserCardFullName \"brayan hartmann\" to submit order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5555555555554444",
+                  "offset": 28
+                },
+                {
+                  "val": "0923",
+                  "offset": 67
+                },
+                {
+                  "val": "123",
+                  "offset": 87
+                },
+                {
+                  "val": "brayan hartmann",
+                  "offset": 110
+                }
+              ],
+              "location": "Common.user_Enters_UserCardNumber_UserCardExpiryDate_UserCardCVV_UserCardFullName_to_submit_order(String,String,String,String)"
+            },
+            "matchedColumns": [
+              6,
+              7,
+              8,
+              9
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32704113000,
+              "status": "passed"
+            },
+            "line": 155,
+            "name": "verify order confirmation page",
+            "match": {
+              "location": "Common.verify_order_confirmation_page()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 148,
+            "name": "@chargingcable"
+          },
+          {
+            "line": 1,
+            "name": "@newfunctionalitysuiteBDD"
+          },
+          {
+            "line": 148,
+            "name": "@GoldenRegressionSuite"
+          }
+        ]
+      }
+    ],
+    "name": "This Test is to validate the ePod2 Skins Screen page",
+    "description": "",
+    "id": "this-test-is-to-validate-the-epod2-skins-screen-page",
+    "keyword": "Feature",
+    "uri": "Skinspage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@newfunctionalitysuiteBDD"
+      }
+    ]
+  }
+]
