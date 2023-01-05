@@ -18,6 +18,8 @@
 		<org.apache.maven.plugins.maven-surefire-plugin.version>2.22.0</org.apache.maven.plugins.maven-surefire-plugin.version>
 		<reportium-sdk.version>2.3.1</reportium-sdk.version>
 		<skipTests>false</skipTests>
+		<maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<profiles>
