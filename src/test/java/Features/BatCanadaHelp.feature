@@ -8,7 +8,7 @@ Feature: Bat Canada Help
   #Author - Harsha
   #Date -Feb 02,2022
 <<<<<<< HEAD
-  #Updated by - P------------------------Tester Branch
+  #Updated by - P------------------------Updating from Github
 =======
   #Updated by - Prakash
 >>>>>>> tester
