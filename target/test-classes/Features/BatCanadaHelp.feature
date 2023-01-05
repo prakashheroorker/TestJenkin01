@@ -7,7 +7,7 @@ Feature: Bat Canada Help
   #Description - The purpose of this test case is to verify the Help UI
   #Author - Harsha
   #Date -Feb 02,2022
-  #Updated by - Prakash First
+  #Updated by - Prakash Second
   #Updated lines -18 to 22
   #Date - 15/12/22
   @BatHelp
