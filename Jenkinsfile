@@ -2,10 +2,20 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Building') {
             steps {
-                bat 'make' 
-                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
+                echo 'Building the Project'
+            }
+        }
+        stage('Testing') {
+            steps {
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.dxc.com/pheroorker2/QA_VUSE_Jenkin_DXC_Github.git']])
+                bat 'mvn test'
+            }
+        }
+        stage('Deployment') {
+            steps {
+                echo 'Deploying the Project'
             }
         }
     }
