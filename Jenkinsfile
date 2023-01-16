@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Testing') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.dxc.com/pheroorker2/QA_VUSE_Jenkin_DXC_Github.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'QA_VUSE_Jenkin_DXC_Github.git']])
                 bat 'mvn test'
             }
         }
