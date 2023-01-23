@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Testing') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'QA_VUSE_Jenkin_DXC_Github.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'VuseCA-QA.git']])
                 bat 'mvn test'
             }
         }
