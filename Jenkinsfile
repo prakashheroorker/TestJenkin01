@@ -1,5 +1,11 @@
 pipeline {
     agent any
+    
+    withCredentials([usernamePassword(credentialsId: 'githubapp-dxc-bat', usernameVariable: 'GITHUB_APP', passwordVariable: 'GITHUB_JWT_TOKEN')]) {
+    bat '''
+        echo "Do something with the access token stored in GITHUB_JWT_TOKEN environment variable"
+    '''
+}
 
     stages {
         stage('Building') {
