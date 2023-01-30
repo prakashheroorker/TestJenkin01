@@ -5,7 +5,7 @@ pipeline {
   //  bat '''
  //       echo "Do something with the access token stored in GITHUB_JWT_TOKEN environment variable"
  //   '''
-}
+//}
 
     stages {
         stage('Building') {
