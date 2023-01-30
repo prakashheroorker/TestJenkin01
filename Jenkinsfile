@@ -15,8 +15,8 @@ pipeline {
         }
         stage('Testing') {
             steps {
-    //            checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'VuseCA-QA.git']])
-      //          bat 'mvn test'
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'VuseCA-QA.git']])
+                bat 'mvn test'
                 echo 'Testing the Project ORG DXC-BAT'
             }
         }
