@@ -31,6 +31,7 @@ pipeline {
          //       bat 'mvn test'
                 sh "ls -lrt /usr/local/* "
                 //////// sh 'mvn test'
+                sh "find . -name maven"
                 
                
                 
