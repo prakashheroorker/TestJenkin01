@@ -27,9 +27,10 @@ pipeline {
            ////     url: 'VuseCA-QA.git'
               /// url: 'ssh://VuseCA-QA.git'
        //    url: 'https://github.dxc.com/DXC-BAT/VuseCA-QA.git'
-           sh "ls -lat"
+          ////////// sh "ls -lat"
          //       bat 'mvn test'
-               sh 'mvn test'
+                sh "ls -lrt /usr/local/* "
+                //////// sh 'mvn test'
                 
                
                 
