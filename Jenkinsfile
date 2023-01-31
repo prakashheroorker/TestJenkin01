@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+   ///// agent any
     
    // withCredentials([usernamePassword(credentialsId: 'githubapp-dxc-bat', usernameVariable: 'GITHUB_APP', passwordVariable: 'GITHUB_JWT_TOKEN')]) {
   //  bat '''
@@ -11,16 +11,25 @@ pipeline {
      //   maven 'Maven 3.8.6'
        //     }
 
+    agent {
+         docker {
+            image 'adoptopenjdk/maven-openjdk8'
+            args '-v $WORKSPACE:/tmp/sibelgaint -u="root" -w /tmp/sibelgaint'
+        }
+    
+    
+    
     stages {
         stage('Building') {
             steps {
                 echo 'Building the Project ORG DXC-BAT'
+                sh 'mvn clean compile'
             }
         }
         stage('Testing') {
             steps {
         //        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'VuseCA-QA.git']])
-            //////    checkout scm
+             ////   checkout scm
            //     git branch: '*/main',
               //       git branch: '/main',
                // credentialsId: 'my_cred_id',
@@ -29,15 +38,19 @@ pipeline {
        //    url: 'https://github.dxc.com/DXC-BAT/VuseCA-QA.git'
           ////////// sh "ls -lat"
          //       bat 'mvn test'
-                sh "ls -lrt ./target/classes/META-INF/maven/*"
+               //// sh "ls -lrt ./target/classes/META-INF/maven/*"
                 //////// sh 'mvn test'
                ///  sh "find . -name maven"   
             ///    echo 'Testing the Project ORG DXC-BAT'
                 
-                git branch: 'main', url: "https://github.dxc.com/DXC-BAT/VuseCA-QA.git"
+         ////       git branch: 'main', url: "https://github.dxc.com/DXC-BAT/VuseCA-QA.git"
+             ///        withMaven(maven : 'apache-maven-3.6.1') {
+                ///     bat'mvn clean compile' }
                 
-                 withMaven(maven : 'apache-maven-3.6.1') {
-                     bat'mvn clean compile' }
+                
+                
+                sh 'mvn test'
+            
                 
                 
                 
