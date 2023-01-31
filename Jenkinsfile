@@ -20,7 +20,7 @@ pipeline {
         stage('Testing') {
             steps {
         //        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'VuseCA-QA.git']])
-                checkout scm
+            //////    checkout scm
            //     git branch: '*/main',
               //       git branch: '/main',
                // credentialsId: 'my_cred_id',
@@ -31,15 +31,17 @@ pipeline {
          //       bat 'mvn test'
                 sh "ls -lrt ./target/classes/META-INF/maven/*"
                 //////// sh 'mvn test'
+               ///  sh "find . -name maven"   
+            ///    echo 'Testing the Project ORG DXC-BAT'
                 
-               
-                sh "find . -name maven"
+                git branch: 'main', url: "https://github.dxc.com/DXC-BAT/VuseCA-QA.git"
                 
-               
+                 withMaven(maven : 'apache-maven-3.6.1') {
+                     bat'mvn clean compile' }
                 
                 
                 
-                echo 'Testing the Project ORG DXC-BAT'
+                
             }
         }
         stage('Deployment') {
