@@ -25,7 +25,14 @@ pipeline {
        //    url: 'https://github.dxc.com/DXC-BAT/VuseCA-QA.git'
            sh "ls -lat"
          //       bat 'mvn test'
-                sh 'mvn test'
+               ///// sh 'mvn test'
+                
+                withMaven(maven: 'mvn') {
+            sh "mvn test"
+        }
+                
+                
+                
                 echo 'Testing the Project ORG DXC-BAT'
             }
         }
