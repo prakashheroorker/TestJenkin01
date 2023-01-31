@@ -19,8 +19,8 @@ pipeline {
                 git branch: '*/main',
                // credentialsId: 'my_cred_id',
            ////     url: 'VuseCA-QA.git'
-                url: 'ssh://VuseCA-QA.git'
-
+              /// url: 'ssh://VuseCA-QA.git'
+                 url: 'https://github.dxc.com/DXC-BAT/VuseCA-QA.git'
             sh "ls -lat"
          //       bat 'mvn test'
                 sh "mvn test"
