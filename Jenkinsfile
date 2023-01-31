@@ -18,11 +18,12 @@ pipeline {
         //        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'VuseCA-QA.git']])
                 git branch: '*/main',
                // credentialsId: 'my_cred_id',
-                url: 'VuseCA-QA.git'
+           ////     url: 'VuseCA-QA.git'
+                url: 'ssh://VuseCA-QA.git'
 
             sh "ls -lat"
          //       bat 'mvn test'
-                sh 'mvn test'
+                sh "mvn test"
                 echo 'Testing the Project ORG DXC-BAT'
             }
         }
