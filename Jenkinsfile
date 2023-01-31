@@ -6,6 +6,10 @@ pipeline {
  //       echo "Do something with the access token stored in GITHUB_JWT_TOKEN environment variable"
  //   '''
 //}
+    
+    tools {
+        maven 'Maven 3.8.6'
+            }
 
     stages {
         stage('Building') {
@@ -25,11 +29,9 @@ pipeline {
        //    url: 'https://github.dxc.com/DXC-BAT/VuseCA-QA.git'
            sh "ls -lat"
          //       bat 'mvn test'
-               ///// sh 'mvn test'
+               sh 'mvn test'
                 
-                withMaven(maven: 'mvn') {
-            sh "mvn test"
-        }
+               
                 
                 
                 
