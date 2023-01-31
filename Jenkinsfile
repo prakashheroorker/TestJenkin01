@@ -17,7 +17,7 @@ pipeline {
             args '-v $WORKSPACE:/tmp/sibelgaint -u="root" -w /tmp/sibelgaint'
         }
     
-    
+    }
     
     stages {
         stage('Building') {
