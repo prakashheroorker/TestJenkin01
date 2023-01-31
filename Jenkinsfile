@@ -29,8 +29,10 @@ pipeline {
        //    url: 'https://github.dxc.com/DXC-BAT/VuseCA-QA.git'
           ////////// sh "ls -lat"
          //       bat 'mvn test'
-                sh "ls -lrt ./target/classes/META-INF/*"
+                sh "ls -lrt ./target/classes/META-INF/maven/*"
                 //////// sh 'mvn test'
+                
+               
                 sh "find . -name maven"
                 
                
