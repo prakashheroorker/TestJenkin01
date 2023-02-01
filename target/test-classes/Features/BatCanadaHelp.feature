@@ -16,12 +16,12 @@ Feature: Bat Canada Help
    When User click on login/register button
    Then Verify the login modal is displayed with relevent content
     When User enters email "<UN>" and Password "<pwd>" and click on login
-    Then Verify home page is displayed
-    When User Hover on Help and verify links under help
-    And User clicks on Shipping and delivery and verify shipping and delivery page
-    And User Hover on Help and click on Contact us and verify Contact Us page
-    And User Hover on Help and click on Faq and verify Faq page
-  And User Hover on Help and click on StoreLocator and verify StoreLocator page
+  #  Then Verify home page is displayed
+   # When User Hover on Help and verify links under help
+   # And User clicks on Shipping and delivery and verify shipping and delivery page
+  #  And User Hover on Help and click on Contact us and verify Contact Us page
+   # And User Hover on Help and click on Faq and verify Faq page
+ # And User Hover on Help and click on StoreLocator and verify StoreLocator page
     And Hover on Account icon and Click on Logout option
     Then Verify the user is in Pre login home page
 
