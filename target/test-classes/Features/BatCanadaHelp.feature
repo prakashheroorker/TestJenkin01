@@ -5,7 +5,7 @@ Feature: Bat Canada Help
 
   #Test Case - BatCanada_Help
   #Description - The purpose of this test case is to verify the Help UI
-  #Author - Harsha-----
+  #Author - Harsha----****
   #Date -Feb 02,2022
   #Updated by - Updated PRH - 1st Feb
 
